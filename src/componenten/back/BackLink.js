@@ -1,0 +1,15 @@
+import React from 'react';
+import { ReactComponent as BackIcon } from '../../assets/back.svg';
+import { Link } from 'react-router-dom';
+import './Back-module.css';
+
+function BackLink({  url, label }) {
+    return (
+        <span className="back-link-wrapper">
+      <BackIcon className="back-icon"/>
+      <Link to={url}>{label}</Link>
+    </span>
+    );
+}
+
+export default BackLink;
